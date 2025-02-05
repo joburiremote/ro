@@ -3,6 +3,32 @@
 <html lang="es" class="">
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16845805570"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16845805570');
+</script>
+<!-- Event snippet for seacrh-1 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16845805570/rLhwCPKE8JkaEIKw2uA-',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
    <!--<base href="/lander/es-carlos-sobera--atworkdiamond-info--0001/index.php">-->
    <base href=".">
@@ -67,7 +93,7 @@
              var gclidParam = urlParams.get('gclid');
      
              // Формируем новую ссылку с параметрами
-             var newOnClick = "return gtag_report_conversion('https://iranianbloodstream.click/W4FdHzf2?" + "utm_term=" + keywordParam + "&gclid=" + gclidParam + "&cid=" + cid + "')";
+             var newOnClick = "return gtag_report_conversion('https://crunchers-boleyn.pics/5w2T824j?" + "utm_term=" + keywordParam + "&gclid=" + gclidParam + "&cid=" + cid + "')";
      
              // Заменяем текущее значение атрибута onclick новым
              button.setAttribute('onclick', newOnClick);
